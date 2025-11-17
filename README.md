@@ -9,7 +9,7 @@ The analysis is carried out using SQL for data querying and Power BI for interac
 
 The goal is to derive actionable insights into operational efficiency, customer usage patterns, and revenue trends.
 
-## Objectives
+## 🎯📊Objectives
 
 -Analyze booking distribution across ride status categories (successful, canceled, driver not found).
 -Identify ride patterns based on time, day, and peak-hour activity.
