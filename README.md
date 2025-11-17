@@ -9,62 +9,19 @@ The analysis is carried out using SQL for data querying and Power BI for interac
 
 The goal is to derive actionable insights into operational efficiency, customer usage patterns, and revenue trends.
 
-## 📚 Table of Contents
+## Objectives
 
-#### Dataset
-
-#### Dataset Columns
-#### Database Schema
-#### SQL Analysis
-#### Power BI Dashboard
-#### Key Insights
-#### Conclusion
-#### Author
+-Analyze booking distribution across ride status categories (successful, canceled, driver not found).
+-Identify ride patterns based on time, day, and peak-hour activity.
+-Evaluate customer and driver cancellation reasons and their impact on operations.
+-Analyze revenue trends, payment method usage, and high-value customer segments.
+-Analyze pickup and drop-off location performance to identify top-demand areas.
+-Calculate ride distances, ratings, and vehicle-type performance metrics.
+-Build interactive Power BI dashboards to visualize KPIs and uncover actionable insights.
 
 🗂️ Dataset
 
 The dataset consists of Uber booking records, capturing ride operations, customer activity, cancellations, fare details, and ratings.
-
-🧾 Dataset Columns
-
-****Date****
-
-****Time****
-
-**Booking_ID**
-
-Booking_Status
-
-Customer_ID
-
-Vehicle_Type
-
-Pickup_Location
-
-Drop_Location
-
-V_TAT
-
-C_TAT
-
-Canceled_Rides_by_Customer
-
-Canceled_Rides_by_Driver
-
-Incomplete_Rides
-
-Incomplete_Rides_Reason
-
-Booking_Value
-
-Payment_Method
-
-Ride_Distance
-
-Driver_Ratings
-
-Customer_Rating
-
 
 🧱 Database Schema
 ```sql
