@@ -2,16 +2,14 @@
 
 ![🔍 Dashboard Preview](https://github.com/Sohelnur/uber-data-analysis-sql-powerbi/blob/main/Ovarall.png)
 
-(Replace with your actual image)
-
-📌 Overview
+## 📌 Overview
 
 This project analyzes Uber ride data to understand booking behavior, ride patterns, cancellations, payment trends, revenue insights, and customer/driver performance.
 The analysis is carried out using SQL for data querying and Power BI for interactive visual dashboards.
 
 The goal is to derive actionable insights into operational efficiency, customer usage patterns, and revenue trends.
 
-📚 Table of Contents
+## 📚 Table of Contents
 
 Dataset
 
@@ -73,7 +71,9 @@ Driver_Ratings
 
 Customer_Rating
 
+
 🧱 Database Schema
+```sql
 CREATE TABLE bookings (
     Date DATE,
     Time TIME,
@@ -95,6 +95,7 @@ CREATE TABLE bookings (
     Driver_Ratings FLOAT,
     Customer_Rating FLOAT
 );
+```
 
 🧠 SQL Analysis
 1. Successful bookings
