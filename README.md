@@ -198,6 +198,6 @@ A strong end-to-end analytics case study combining both SQL and BI tools.
 
 ## 👨‍💼 Author
 
-### Nur Md. Sohel
+**Nur Md. Sohel**
 
-### 🔗 LinkedIn: www.linkedin.com/in/nur-md-sohel-67a567340
+**🔗LinkedIn: www.linkedin.com/in/nur-md-sohel-67a567340**
