@@ -6,7 +6,6 @@
 
 This project analyzes Uber ride data to understand booking behavior, ride patterns, cancellations, payment trends, revenue insights, and customer/driver performance.
 The analysis is carried out using SQL for data querying and Power BI for interactive visual dashboards.
-
 The goal is to derive actionable insights into operational efficiency, customer usage patterns, and revenue trends.
 
 ## 🎯📊Objectives
@@ -165,7 +164,7 @@ ORDER BY Booking_Date;
 ## 5️⃣ Analysis of Ratings
 ![Ratings](https://github.com/Sohelnur/uber-data-analysis-sql-powerbi/blob/main/Ratings.png)
 
-⭐ Key Insights
+## ⭐ Key Insights
 
 Cash (₹19.3M) + UPI (₹14.2M) contribute 95% of total revenue
 
@@ -181,7 +180,7 @@ Ratings remain consistently strong (around 4.0)
 
 Daily rides maintain a stable trend (3k–3.4k per day)
 
-🏁 Conclusion
+## 🏁 Conclusion
 
 This project demonstrates:
 
@@ -197,7 +196,8 @@ Insights extraction from real-world ride-hailing data
 
 A strong end-to-end analytics case study combining both SQL and BI tools.
 
-👨‍💼 Author
+## 👨‍💼 Author
 
-Nur Md. Sohel
-🔗 LinkedIn: www.linkedin.com/in/nur-md-sohel-67a567340
+### Nur Md. Sohel
+
+### 🔗 LinkedIn: www.linkedin.com/in/nur-md-sohel-67a567340
