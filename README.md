@@ -1,6 +1,6 @@
 # 🚕 Uber Data Analysis using SQL & Power BI
 
-![🔍 Dashboard Preview]()
+![🔍 Dashboard Preview](https://github.com/Sohelnur/uber-data-analysis-sql-powerbi/blob/main/Ovarall.png)
 
 (Replace with your actual image)
 
