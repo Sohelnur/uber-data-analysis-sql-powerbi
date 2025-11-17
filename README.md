@@ -152,7 +152,7 @@ ORDER BY Booking_Date;
 ## 1️⃣ Overall Metrics & Ride Trends
 ![Ovarall](https://github.com/Sohelnur/uber-data-analysis-sql-powerbi/blob/main/Overall.png)
 
-## 2️⃣ Analysis on vehicle type
+## 2️⃣ Analysis on Vehicle Type
 ![Vehicle Type](https://github.com/Sohelnur/uber-data-analysis-sql-powerbi/blob/main/Vehicle%20Type.png)
 
 ## 3️⃣ Reveneu Analysis
