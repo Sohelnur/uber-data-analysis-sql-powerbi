@@ -11,21 +11,15 @@ The goal is to derive actionable insights into operational efficiency, customer 
 
 ## 📚 Table of Contents
 
-Dataset
+## Dataset
 
-Dataset Columns
-
-Database Schema
-
-SQL Analysis
-
-Power BI Dashboard
-
-Key Insights
-
-Conclusion
-
-Author
+## Dataset Columns
+**Database Schema**
+**SQL Analysis**
+**Power BI Dashboard**
+**Key Insights**
+**Conclusion**
+**Author**
 
 🗂️ Dataset
 
@@ -33,11 +27,11 @@ The dataset consists of Uber booking records, capturing ride operations, custome
 
 🧾 Dataset Columns
 
-Date
+****Date****
 
-Time
+****Time****
 
-Booking_ID
+**Booking_ID**
 
 Booking_Status
 
@@ -196,8 +190,8 @@ FROM daily_revenue
 ORDER BY Booking_Date;
 ```
 
-📊 Power BI Dashboard
-# 1️⃣ Overall Metrics & Ride Trends
+# 📊 Power BI Dashboard
+## 1️⃣ Overall Metrics & Ride Trends
 ![Ovarall](https://github.com/Sohelnur/uber-data-analysis-sql-powerbi/blob/main/Ovarall.png)
 
 2️⃣ Ride Status Distribution
