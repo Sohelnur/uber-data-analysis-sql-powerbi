@@ -97,77 +97,75 @@ CREATE TABLE bookings (
 );
 ```
 
-🧠 SQL Analysis
-1. Successful bookings
-CREATE VIEW Successful_Bookings AS
+## 🧠 SQL Analysis
+
+### 1. Retrieve all successful bookings:
+```sql
 SELECT * FROM bookings
 WHERE Booking_Status = 'Success';
-
-2. Average ride distance per vehicle type
-CREATE VIEW ride_distance_for_each_vehicle AS
-SELECT Vehicle_Type, AVG(Ride_Distance) AS avg_distance
-FROM bookings
-GROUP BY Vehicle_Type;
-
-3. Total cancelled rides by customers
-CREATE VIEW cancelled_rides_by_customers AS
-SELECT COUNT(*) AS CancelByCust
-FROM bookings
-WHERE Booking_Status = 'Canceled by Customer';
-
-4. Top 5 customers by ride count
-CREATE VIEW Top_5_Customers AS
-SELECT Customer_ID, COUNT(Booking_ID) AS total_rides
-FROM bookings
-GROUP BY Customer_ID
-ORDER BY total_rides DESC
-LIMIT 5;
-
-5. Cancellations by drivers (personal/car issues)
-CREATE VIEW Rides_cancelled_by_Drivers_P_C_Issues AS
-SELECT COUNT(*) AS cancelByDriver
-FROM bookings
-WHERE Canceled_Rides_by_Driver = 'Personal & Car related issue';
-
-6. UPI payment rides
-CREATE VIEW UPI_Payment AS
-SELECT * FROM bookings
-WHERE Payment_Method = 'UPI';
-
-7. Average customer rating per vehicle type
-CREATE VIEW AVG_Cust_Rating AS
-SELECT Vehicle_Type, AVG(Customer_Rating) AS avg_customer_rating
-FROM bookings
-GROUP BY Vehicle_Type;
-
-8. Total successful ride value
-CREATE VIEW total_successful_ride_value AS
-SELECT SUM(Booking_Value) AS total_successful_ride_value
-FROM bookings
-WHERE Booking_Status = 'Success';
-
-9. Incomplete rides and reasons
-CREATE VIEW Incomplete_Rides_Reason AS
-SELECT Booking_ID, Incomplete_Rides_Reason
-FROM bookings
-WHERE Incomplete_Rides = 'Yes';
-
-10. Top 10 busiest pickup locations
+```
+ ### 2. Find the average ride distance for each vehicle type:
+```sql
+ SELECT Vehicle_Type, AVG(Ride_Distance)
+ as avg_distance FROM bookings
+ GROUP BY Vehicle_Type;
+ ```
+ ### 3. Get the total number of cancelled rides by customers:
+ ```sql
+ SELECT COUNT(*) AS CancelByCust FROM bookings
+ WHERE Booking_Status = "Canceled by Customer";
+ ```
+ ### 4. List the top 5 customers who booked the highest number of rides:
+  ```sql
+ SELECT Customer_ID, COUNT(Booking_ID) as total_rides
+ FROM bookings
+ GROUP BY Customer_ID
+ ORDER BY total_rides DESC LIMIT 5;
+ ```
+ ### 5. Get the number of rides cancelled by drivers due to personal and car-related issues:
+```sql
+ SELECT COUNT(*) AS cancelByDriver FROM bookings
+ WHERE Canceled_Rides_by_Driver = 'Personal & Car related issue';
+ ```
+ ### 6. Retrieve all rides where payment was made using UPI:
+ ```sql
+ SELECT * FROM bookings
+ WHERE Payment_Method = 'UPI';
+```
+ ### 7. Find the average customer rating per vehicle type:
+ ```sql
+ SELECT Vehicle_Type, AVG(Customer_Rating) as avg_customer_rating
+ FROM bookings
+ GROUP BY Vehicle_Type;
+  ```
+ ### 8. Calculate the total booking value of rides completed successfully:
+ ```sql
+ SELECT SUM(Booking_Value) as total_successful_ride_value
+ FROM bookings
+ WHERE Booking_Status = 'Success';
+ ```
+ #9. List all incomplete rides along with the reason:
+ Create View Incomplete_Rides_Reason As
+ SELECT Booking_ID, Incomplete_Rides_Reason
+ FROM bookings
+ WHERE Incomplete_Rides = 'Yes';
+ 
+#10.What are the top 10 busiest pickup locations by ride count:
 SELECT Pickup_Location, COUNT(*) AS Ride_Count
 FROM bookings
 GROUP BY Pickup_Location
-ORDER BY Ride_Count DESC
-LIMIT 10;
+ORDER BY Ride_Count DESC LIMIT 10;
 
-11. Ride distribution by hour
+
+ #11.Which hours of the day have the highest number of rides:
 SELECT HOUR(Time) AS Hour, COUNT(*) AS Ride_Count
 FROM bookings
 WHERE Time IS NOT NULL
 GROUP BY Hour
 ORDER BY Ride_Count DESC;
-
-12. Cumulative revenue per day
-SELECT
+ 
+ #12.What is the cumulative revenue per day over time:
+ SELECT
     DATE(Date) AS Booking_Date,
     SUM(Booking_Value) AS Daily_Revenue,
     SUM(SUM(Booking_Value)) OVER (ORDER BY DATE(Date)) AS Cumulative_Revenue
@@ -175,14 +173,18 @@ FROM bookings
 WHERE Booking_Status = 'Success'
 GROUP BY DATE(Date)
 ORDER BY Booking_Date;
-
-13. Daily revenue vs previous & next day
+ 
+ #13.Daily revenue and its change compared to previous and next day:
+ -- Step 1: Aggregate revenue per day in a subquery
 WITH daily_revenue AS (
-    SELECT DATE(Date) AS Booking_Date, SUM(Booking_Value) AS Daily_Revenue
+    SELECT
+        DATE(Date) AS Booking_Date,
+        SUM(Booking_Value) AS Daily_Revenue
     FROM bookings
     WHERE Booking_Status = 'Success'
     GROUP BY DATE(Date)
 )
+-- Step 2: Apply LAG() and LEAD() on aggregated results
 SELECT
     Booking_Date,
     Daily_Revenue,
