@@ -11,20 +11,15 @@ The goal is to derive actionable insights into operational efficiency, customer 
 
 ## 📚 Table of Contents
 
-## Dataset
+#### Dataset
 
-## Dataset Columns
-**Database Schema**
-
-**SQL Analysis**
-
-**Power BI Dashboard**
-
-**Key Insights**
-
-**Conclusion**
-
-**Author**
+#### Dataset Columns
+#### Database Schema
+#### SQL Analysis
+#### Power BI Dashboard
+#### Key Insights
+#### Conclusion
+#### Author
 
 🗂️ Dataset
 
