@@ -19,9 +19,10 @@ The goal is to derive actionable insights into operational efficiency, customer 
 - Calculate ride distances, ratings, and vehicle-type performance metrics.
 - Build interactive Power BI dashboards to visualize KPIs and uncover actionable insights.
 
-🗂️ Dataset
+## 🗂️ Dataset
 
 The dataset consists of Uber booking records, capturing ride operations, customer activity, cancellations, fare details, and ratings.
+- **Dataset Link:** [Bookings](https://docs.google.com/spreadsheets/d/118ycd2jeD1vW_J5-Cf9V3JM6xHm0CNAJ1fwCfkn4Vy4/edit?usp=sharing)
 
 🧱 Database Schema
 ```sql
