@@ -23,7 +23,7 @@ The goal is to derive actionable insights into operational efficiency, customer 
 The dataset consists of Uber booking records, capturing ride operations, customer activity, cancellations, fare details, and ratings.
 - **Dataset Link:** [Bookings](https://docs.google.com/spreadsheets/d/118ycd2jeD1vW_J5-Cf9V3JM6xHm0CNAJ1fwCfkn4Vy4/edit?usp=sharing)
 
-🧱 Database Schema
+## 🧱 Schema
 ```sql
 CREATE TABLE bookings (
     Date DATE,
@@ -182,7 +182,7 @@ ORDER BY Booking_Date;
 
 ## 🏁 Conclusion
 
-- This project demonstrates:
+**This project demonstrates:**
 
 **SQL data transformation**
 
