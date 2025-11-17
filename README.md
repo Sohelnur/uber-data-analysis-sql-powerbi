@@ -12,11 +12,17 @@ The goal is to derive actionable insights into operational efficiency, customer 
 ## 🎯📊Objectives
 
 -Analyze booking distribution across ride status categories (successful, canceled, driver not found).
+
 -Identify ride patterns based on time, day, and peak-hour activity.
+
 -Evaluate customer and driver cancellation reasons and their impact on operations.
+
 -Analyze revenue trends, payment method usage, and high-value customer segments.
+
 -Analyze pickup and drop-off location performance to identify top-demand areas.
+
 -Calculate ride distances, ratings, and vehicle-type performance metrics.
+
 -Build interactive Power BI dashboards to visualize KPIs and uncover actionable insights.
 
 🗂️ Dataset
