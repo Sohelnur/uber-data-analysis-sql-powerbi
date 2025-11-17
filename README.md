@@ -166,35 +166,35 @@ ORDER BY Booking_Date;
 
 ## ⭐ Key Insights
 
-Cash (₹19.3M) + UPI (₹14.2M) contribute 95% of total revenue
+**Cash (₹19.3M) + UPI (₹14.2M) contribute 95% of total revenue**
 
-Tuesday shows the highest booking value, Sunday the lowest
+**Tuesday shows the highest booking value, Sunday the lowest**
 
-Customer cancellations mostly occur when driver is not moving
+**Customer cancellations mostly occur when driver is not moving**
 
-Driver cancellations mostly due to personal/car issues
+**Driver cancellations mostly due to personal/car issues**
 
-RT Nagar, Nagarbhavi, Banashankari are the top performing pickup areas
+**RT Nagar, Nagarbhavi, Banashankari are the top performing pickup areas**
 
-Ratings remain consistently strong (around 4.0)
+**Ratings remain consistently strong (around 4.0)**
 
-Daily rides maintain a stable trend (3k–3.4k per day)
+**Daily rides maintain a stable trend (3k–3.4k per day)**
 
 ## 🏁 Conclusion
 
-This project demonstrates:
+- This project demonstrates:
 
-SQL data transformation
+**SQL data transformation**
 
-Analytical query writing
+**Analytical query writing**
 
-KPI and metric creation
+**KPI and metric creation**
 
-Data visualization mastery in Power BI
+**Data visualization mastery in Power BI**
 
-Insights extraction from real-world ride-hailing data
+**Insights extraction from real-world ride-hailing data**
 
-A strong end-to-end analytics case study combining both SQL and BI tools.
+**A strong end-to-end analytics case study combining both SQL and BI tools.**
 
 ## 👨‍💼 Author
 
