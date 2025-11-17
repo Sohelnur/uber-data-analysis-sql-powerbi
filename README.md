@@ -1,6 +1,6 @@
 # 🚕 Uber Data Analysis using SQL & Power BI
 
-![🔍 Dashboard Preview](https://github.com/Sohelnur/uber-data-analysis-sql-powerbi/blob/main/Ovarall.png)
+![🔍 Dashboard Preview](https://github.com/Sohelnur/uber-data-analysis-sql-powerbi/blob/main/Overall.png)
 
 ## 📌 Overview
 
@@ -147,23 +147,22 @@ FROM daily_revenue
 ORDER BY Booking_Date;
 ```
 
+
 # 📊 Power BI Dashboard
 ## 1️⃣ Overall Metrics & Ride Trends
-![Ovarall](https://github.com/Sohelnur/uber-data-analysis-sql-powerbi/blob/main/Ovarall.png)
+![Ovarall](https://github.com/Sohelnur/uber-data-analysis-sql-powerbi/blob/main/Overall.png)
 
-2️⃣ Ride Status Distribution
+## 2️⃣ Analysis on vehicle type
+![Vehicle Type](https://github.com/Sohelnur/uber-data-analysis-sql-powerbi/blob/main/Vehicle%20Type.png)
 
-3️⃣ Payment Method Analysis
+## 3️⃣ Reveneu Analysis
+![Reveneu](https://github.com/Sohelnur/uber-data-analysis-sql-powerbi/blob/main/Revenue.png)
 
-4️⃣ Booking Value by Day
+## 4️⃣ Cancellation Analysis
+![Cancellation](https://github.com/Sohelnur/uber-data-analysis-sql-powerbi/blob/main/Cancellation.png)
 
-5️⃣ Top Customers
-
-6️⃣ Top Pickup Locations
-
-7️⃣ Customer & Driver Cancellations
-
-8️⃣ Ratings Analysis
+## 5️⃣ Analysis of Ratings
+![Ratings](https://github.com/Sohelnur/uber-data-analysis-sql-powerbi/blob/main/Ratings.png)
 
 ⭐ Key Insights
 
