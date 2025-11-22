@@ -34,8 +34,6 @@ CREATE TABLE bookings (
     Vehicle_Type VARCHAR(50),
     Pickup_Location VARCHAR(255),
     Drop_Location VARCHAR(255),
-    V_TAT INT,
-    C_TAT INT,
     Canceled_Rides_by_Customer VARCHAR(100),
     Canceled_Rides_by_Driver VARCHAR(100),
     Incomplete_Rides VARCHAR(10),
