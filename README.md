@@ -38,7 +38,7 @@ CREATE TABLE bookings (
     Canceled_Rides_by_Driver VARCHAR(100),
     Incomplete_Rides VARCHAR(10),
     Incomplete_Rides_Reason VARCHAR(255),
-    Booking_Value FLOAT,
+    Booking_Value DECIMAL(6,2),
     Payment_Method VARCHAR(50),
     Ride_Distance DECIMAL(6,2),     
     Driver_Ratings DECIMAL(2,1),     
