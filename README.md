@@ -40,9 +40,9 @@ CREATE TABLE bookings (
     Incomplete_Rides_Reason VARCHAR(255),
     Booking_Value FLOAT,
     Payment_Method VARCHAR(50),
-    Ride_Distance FLOAT,
-    Driver_Ratings FLOAT,
-    Customer_Rating FLOAT
+    Ride_Distance DECIMAL(6,2),     
+    Driver_Ratings DECIMAL(2,1),     
+    Customer_Rating DECIMAL(2,1)
 );
 ```
 
